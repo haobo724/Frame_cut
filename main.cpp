@@ -25,7 +25,7 @@ void video_spliit(string &videoname) {
 
 
 	VideoCapture capture(videoname);
-	cout << capture.get(CAP_PROP_FRAME_COUNT) << endl;
+	cout <<"total frame:"<< capture.get(CAP_PROP_FRAME_COUNT) << endl;
 	vector <Mat> skin_frame;
 	double ratio;
 	while (capture.isOpened())
